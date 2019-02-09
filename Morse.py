@@ -57,6 +57,7 @@ while True:
   if confirm == 'y':
    break
 
+tx_input = str("bgn" + tx_input + "end")
 list_input = list(tx_input)
 morsed_list = list()
 
@@ -76,7 +77,7 @@ for i in morsed_list_join:
         append_dot()
         append_silence(duration_milliseconds=100)
     elif i == '-':
-        append_doot()
+        append_dash()
         append_silence(duration_milliseconds=100)
     else:
         append_silence()
